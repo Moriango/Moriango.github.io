@@ -4683,8 +4683,8 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 		}
 
 	}
-	.actions_special {
-		float:left;
-		margin-right: 5px;
-		list-style-type: none;
-	}
+.actions_special {
+	float:left;
+	margin-right: 5px;
+	list-style-type: none;
+}
