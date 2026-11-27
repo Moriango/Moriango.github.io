@@ -7,6 +7,38 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			.doc-frame {
+				width: 100%;
+				height: 1200px;
+				border: 1px solid #ddd;
+				border-radius: 6px;
+			}
+
+			.mobile-resume-actions {
+				display: none;
+			}
+
+			@media screen and (max-width: 736px) {
+				.doc-frame {
+					height: 78vh;
+				}
+
+				.resume-embed {
+					display: none;
+				}
+
+				.mobile-resume-actions {
+					display: block;
+				}
+
+				.mobile-resume-actions .button {
+					display: block;
+					margin-bottom: 0.75rem;
+					text-align: center;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -25,12 +57,11 @@
 							<li><a href="#" onclick="window.location.href='generic.html'; return false;">Projects</a></li>
 							<li class="active"><a href="#" onclick="window.location.href='resume.html'; return false;">View Resume</a></li>
 						</ul>
-						<ul class="icons">
-							<li><a href="./Cover_Letter.pdf" target="_blank" class="fa fa-envelope-o" style="font-size:24px" title="Cover Letter"><span class="label"></span></a></li>
-							<li><a href="https://www.linkedin.com/in/tdnstallworth/" target="_blank" class="icon brands fa-linkedin" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://stackoverflow.com/users/10960203/toddneal-stallworth" target="_blank" class="icon brands fa-stack-overflow" title="Stack Overflow"><span class="label">Stack Overflow</span></a></li>
-							<li><a href="https://teamtreehouse.com/profiles/moriango" target="_blank" class="fa fa-tree" style="font-size:24px" title="Team Tree House"><span class="label" aria-hidden="true"></span></a></li>
-							<li><a href="https://github.com/Moriango" target="_blank" class="icon brands fa-github" title="GitHub"><span class="label">GitHub</span></a></li>
+                        <ul class="icons">
+                            <li><a href="https://github.com/Moriango" target="_blank"  class="icon brands fa-github" title="GitHub"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/tdnstallworth/" target="_blank"  class="icon brands fa-linkedin" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://stackoverflow.com/users/10960203/toddneal-stallworth" target="_blank"  class="icon brands fa-stack-overflow" title="Stack Overflow"><span class="label">Stack Overflow</span></a></li>
+							<li><a href="https://teamtreehouse.com/profiles/moriango" target="_blank"  class="fa fa-tree" style="font-size:24px" title="Team Tree House"><span class="label" aria-hidden="true"></span></a></li>
 						</ul>
 					</nav>
 
@@ -41,22 +72,22 @@
 								<h2>Resume</h2>
 								<p>View embedded resume below, <a href="resume-fullscreen.html">open fullscreen</a>, or <a href="https://docs.google.com/document/d/1OpYVJlGu1N5Dce3qILCpdLNdM_todYWYHgRqtZAtowM/export?format=pdf" target="_blank">download PDF</a>.</p>
 							</header>
+							<div class="mobile-resume-actions">
+								<a href="https://docs.google.com/document/d/1OpYVJlGu1N5Dce3qILCpdLNdM_todYWYHgRqtZAtowM/preview?rm=minimal" target="_blank" class="button primary">Open Resume (Mobile View)</a>
+								<a href="https://docs.google.com/document/d/1OpYVJlGu1N5Dce3qILCpdLNdM_todYWYHgRqtZAtowM/export?format=pdf" target="_blank" class="button">Download Resume PDF</a>
+							</div>
 							<iframe
-								src="https://docs.google.com/document/d/1OpYVJlGu1N5Dce3qILCpdLNdM_todYWYHgRqtZAtowM/preview"
-								width="100%"
-								height="1200"
-								style="border: 1px solid #ddd; border-radius: 6px;"
+								src="https://docs.google.com/document/d/1OpYVJlGu1N5Dce3qILCpdLNdM_todYWYHgRqtZAtowM/preview?rm=minimal"
+								class="doc-frame resume-embed"
 								title="Todd Stallworth Resume"
 							></iframe>
 							<header class="major" style="margin-top: 3rem;">
 								<h2>Cover Letter</h2>
-								<p>View embedded cover letter below, <a href="cover-letter-fullscreen.html">open fullscreen</a>, or <a href="./Cover_Letter.pdf" target="_blank">download PDF</a>.</p>
+								<p>View embedded cover letter below, <a href="cover-letter-fullscreen.html">open fullscreen</a>, or <a href="https://docs.google.com/document/d/1ApSUqeLdKGeZ0r_m5T_bI_x_1bLa-tcxLDc8d2a5l5k/export?format=pdf" target="_blank">download PDF</a>.</p>
 							</header>
 							<iframe
-								src="./Cover_Letter.pdf"
-								width="100%"
-								height="1200"
-								style="border: 1px solid #ddd; border-radius: 6px;"
+								src="https://docs.google.com/document/d/1ApSUqeLdKGeZ0r_m5T_bI_x_1bLa-tcxLDc8d2a5l5k/preview?rm=minimal"
+								class="doc-frame"
 								title="Todd Stallworth Cover Letter"
 							></iframe>
 						</article>
